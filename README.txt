@@ -1,0 +1,12 @@
+Beast Mode: by Garo Anguiano-Sainz, Simphiwe Hlophe, Jonathon Liou, and Colby Seyferth
+
+This game is a variant of Fishy Game (Fishygame.org). Our title screen is an interactive menu with a movable player. Too chose the difficulty, one uses the Arrow Keys to move the shark to eat the fish that corresponds to the preferred difficulty(easy, medium, or hard). The size and speed of the enemy sharks change depending on the difficulty you choose (easy has the smaller, slower enemies while hard has the bigger faster ones). As soon as you eat a fish, the background changes and the enemies start entering the screen to try to eat you. If you get eaten by a shark that is the same size as you or bigger, you lose. If you eat a shark that is smaller than you, you grow, until you are big enough to eat even the biggest of enemy sharks. Once you reach a certain size, you win. At the end of  the game, after   you win or lose, it will  display your score, so you can compete against your friends or try to beat your own previous scores.
+
+There is one more aspect of the game, which separates Beast Mode from other fishygames. The BeastMode power-up. If you see a small running man on the screen, eat it to activate BeastMode! Once in Beastmode, a sound clip will play and you will be able to eat any shark, no matter what size it is! This power-up only lasts for 13 seconds, so eat as much as you can before the song stops.  This is not mentioned to players at the start page to provide a surprise for beginners and can be advantageous to intermediate and expert players
+
+What Works: Interactive Start Menu, Moving with Arrow Keys, Multi-threading, Collisions (kind of, see "What Doesn't Work"), Animated Gifs, Factory Design, Strategy, Score.
+
+What Doesn't Work: The collisions work, but our bounding shapes are rectangles and our images are shark-shaped, so there is not an exact pixel-to-pixel collision detection going on. To fix this, we scaled down the size of the rectangles to make it a little more accurate. Additionally, there is the unresolved problem in which the game cannot be restarted; running the main merely creates a blank JFrame which does not display any graphics, although Moveables, bounding rectangles, and collisions, etc. still occur. We had voiced this concern, although no solution was found; thus the player must exit each game either through the menu or by pressing esc.
+
+How to Run it: The main method is in BeastMode.jar. Must exit through menu or escape after each game (see above).
+
